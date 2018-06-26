@@ -3,5 +3,9 @@
 * This repository is a journey from no dotfiles to highly productive dotfiles.
 
 # Contents:
-* To be updated
+* bash_profile
+* vimrc
+* gitconfig
+* gitignore
+* tmux
 
