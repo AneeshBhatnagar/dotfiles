@@ -1,0 +1,26 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Aneesh Bhatnagar
+	email = AneeshBhatnagar@users.noreply.github.com
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[alias]
+	# squash the previous n commits
+	squash = "!f(){ git reset --soft HEAD~${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1}\"; };f"
+	# list all aliases
+	la = "!git config -l | grep alias | cut -c 7-"
+	# Nice, colorful graph visualization
+	lg = log --decorate --oneline --graph --branches --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold blue)(%ar) %C(bold yellow)%d%C(reset) %C(green)%s%C(reset) %C(dim green)- %an%C(reset)'
+	logdog = log --decorate --oneline --graph
+
+	# Semantic Commit messages
+	feat = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"feat: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"feat($1): $2\"; fi }; f"
+	fix = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"fix: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"fix($1): $2\"; fi }; f"
+	style = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"style: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"style($1): $2\"; fi }; f"
+	cleanup = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"cleanup: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"cleanup($1): $2\"; fi }; f"
+	refactor = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"refactor: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"refactor($1): $2\"; fi }; f"
+	perf = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"perf: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"perf($1): $2\"; fi }; f"
+	test = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"test: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"test($1): $2\"; fi }; f"
+	chore = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"chore: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"chore($1): $2\"; fi }; f"
+	tracking = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"tracking: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"tracking($1): $2\"; fi }; f"
+	docs = "!f() { if [[ ! -z $1 ]] && [[ -z $2 ]]; then git commit -m \"docs: $1\"; elif [[ ! -z $1 ]] && [[ ! -z $2 ]]; then git commit -m \"docs($1): $2\"; fi }; f"
