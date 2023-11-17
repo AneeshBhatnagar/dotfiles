@@ -3,9 +3,10 @@
 * This repository is a journey from no dotfiles to highly productive dotfiles.
 
 # Contents:
-* bash_profile
-* vimrc
+* zshrc
+* iterm_config
 * gitconfig
 * gitignore
-* tmux
+* vscode_settings
+* prettierrc
 
