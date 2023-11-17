@@ -1,6 +1,5 @@
 {
     "terminal.external.osxExec": "Hyper.app",
-    "window.zoomLevel": 0,
     "editor.fontSize": 17,
     "terminal.integrated.shell.osx": "/bin/zsh",
     "terminal.integrated.fontFamily": "Source Code Pro for Powerline",
@@ -10,7 +9,7 @@
     "workbench.colorTheme": "Monokai Dimmed",
     "window.newWindowDimensions": "inherit",
     "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
-    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreview": true,
     "editor.renderWhitespace": "all",
     "[javascript]": {
         "editor.formatOnSave": true,
@@ -31,5 +30,16 @@
     "[json]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "[python]": {
+        "editor.formatOnSave": true
+    },
+    "yaml.schemas": {
+        // Basically telling it to use kubernetes schema for all yaml files in here
+        "kubernetes": "*.yaml"
     }
 }
