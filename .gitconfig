@@ -2,6 +2,7 @@
 [user]
 	name = Aneesh Bhatnagar
 	email = AneeshBhatnagar@users.noreply.github.com
+	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDrlmyZ2KIsLz9aZo7gbnu78/J/fSFRfqlULXPC/JdjJB0xMZw0snu5pHYprnQw/vz4P8H+qexSltHXbKPuiHFutRQ+s3PVQYV94T2EuKF9Nx4b/9ZAaRN2pLruaH4mBl0zldALKZpeTde1zuMJsIUGkkEubFYDAjDQ28yswCmGc4bbCpee+EKcTD6ljGLk+yErZJNn2PKdFHCyDJDOmHvsskR1JMmByA+9LDKFoABKnXk2Lk3dK15AS5EwjUmJN+cgUXyUjhoE0/mnN2VC+xa9RQKvSqqXfOT0lZhUQ2jVvtd4ivV+l2piu5raitr4uGsbOhd+DGvkm7N9oC1dDpLXYUQFgeQKFXFPzVQkbxYc4hEOpAR40JaEgk1uRa9fav3aG3tR7J7/NZwtrF0RN6rufFfbUgpuieXgEU4QyeFEowJJx/V4R7rXNsEVzEV3ZTj8JcN2FcGDbJNTHJC2G3lMWtTfaccLKc1C4LbhFKOYYZ4t8gNIbXBm2e6nf3Hpy61HzEoDTUaWWdgxgfSzlMuU5orIdyRbweeWd8gL4QNMcpsDdcOS04GYYuLNYSxMeh8XsJDoqA6MDauUux+ygaGoXS95PQWc5TqIwCorL00a3bwzZ0PK3MW4FJQWTXaVOlgtebmq+DfhH0XHjm143x2OTvjr/zeH4u7dUSwQ1jV2hQ==
 [url "git@github.com:"]
 	insteadOf = https://github.com/
 [alias]
@@ -30,3 +31,9 @@
 
 [init]
 	defaultBranch = main
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
