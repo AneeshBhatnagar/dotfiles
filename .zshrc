@@ -108,3 +108,4 @@ alias rm="rm -i"
 alias rmi="rm"
 alias rmf="rm -rf"
 alias dc="docker compose"
+export ANSIBLE_CONFIG=/Users/aneesh/Documents/git/homelab/ansible/ansible.cfg
