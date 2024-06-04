@@ -40,6 +40,14 @@
     },
     "yaml.schemas": {
         // Basically telling it to use kubernetes schema for all yaml files in here
-        "kubernetes": "*.yaml"
-    }
+        // "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "*compose.yaml",
+        // "kubernetes": "*.yaml"
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
