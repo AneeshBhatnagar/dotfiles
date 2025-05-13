@@ -75,12 +75,12 @@ plugins=(
     zsh-syntax-highlighting
     zsh-autosuggestions
     docker
+    kubectl
 )
 
 ZSH_DISABLE_COMPFIX="true"
 
 source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -108,4 +108,6 @@ alias rm="rm -i"
 alias rmi="rm"
 alias rmf="rm -rf"
 alias dc="docker compose"
+export PATH=$PATH:~/go/bin
 export ANSIBLE_CONFIG=/Users/aneesh/Documents/git/homelab/ansible/ansible.cfg
+export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
