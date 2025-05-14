@@ -109,5 +109,5 @@ alias rmi="rm"
 alias rmf="rm -rf"
 alias dc="docker compose"
 export PATH=$PATH:~/go/bin
-export ANSIBLE_CONFIG=/Users/aneesh/Documents/git/homelab/ansible/ansible.cfg
+export ANSIBLE_CONFIG=/Users/aneesh/Developer/homelab/ansible/ansible.cfg
 export SSH_AUTH_SOCK=~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/agent.sock
